@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Math.random</title>
+  <link rel="stylesheet" type="text/css" href="mathRandom.css">
+</head>
+<body>
+<div class="title">
+    <h2>JavaScript Math: What happens behind the scenes</h2>
+    <h3>Hit refresh to get new random numbers</h3>
+
+</div>
+<div class="row">
+    <div class="column">
+        <h2>Let's get a random number between 0 and 10</h2>
+        <h2>Math.floor(Math.random() * 10)</p>
+        <h3>(Math.random()) => finds a random number between 0 and .999999</h3>
+        <p id="mathRandom-1"></p>
+        <p id="mathRandom-2"></p>
+        <p id="mathRandom-3"></p>
+        <br>
+
+        <h3>(Math.random() * 10) => takes a random number and multiplies it by 10 in this example</h3>
+        <p id="mathX10-1"></p>
+        <p id="mathX10-2"></p>
+        <p id="mathX10-3"></p>
+        <br>
+
+        <h3>Math.floor(Math.random() * 10) => returns a random integer between 0 and 9 (both included): <br>
+            After multiplying rounds down to the nearest whole number, cut off the decimal places</h3>
+        <p id="mathFloor-1"></p>
+        <p id="mathFloor-2"></p>
+        <p id="mathFloor-3"></p>
+        <br>
+    </div>
+    <div class="column">
+        <h2>Let's try this again with a number between 100 and 200</h2>
+        <h2>Math.floor(Math.random() * 100) + 100</p>
+        <h3>(Math.random()) => finds a random number between 0 and .999999</h3>
+        <p id="mathRandom-11"></p>
+        <p id="mathRandom-22"></p>
+        <p id="mathRandom-33"></p>
+        <br>
+
+        <h3>(Math.random() * 100); => takes a random number and multiplies it by 100 in this example</h3>
+        <h3>100 was used because you take (max - min), in this case (200 -100)</h4>
+        <p id="mathX10-11"></p>
+        <p id="mathX10-22"></p>
+        <p id="mathX10-33"></p>
+        <br>
+
+        <h3>Math.floor(Math.random() * 100) + 100; => returns a random number between 100 and 200 then adds 100 for the starting number</h3>
+        <h3>After multiplying rounds down to the nearest whole number, cut off the decimal places</h3>
+        <p id="mathFloor-11"></p>
+        <p id="mathFloor-22"></p>
+        <p id="mathFloor-33"></p>
+    </div>
+</div>
+<script src="mathRandom.js"></script>
+
+</body>
+</html>
